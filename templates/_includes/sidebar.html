@@ -1,7 +1,7 @@
 <aside class="sidebar">
   {% if SIDEBAR_IMAGE %}
   <section>
-	  <img src="{{ SITEURL }}/{{ SIDEBAR_IMAGE }}" alt="{{ SIDEBAR_IMAGE_ALT}}" width="{{SIDEBAR_IMAGE_WIDTH}}"/> 
+	  <img src="{{ SITEURL }}/{{ SIDEBAR_IMAGE }}" alt="{{ SIDEBAR_IMAGE_ALT}}" width="{{SIDEBAR_IMAGE_WIDTH}}"/>
   </section>
   {% endif %}
   <section>
@@ -14,9 +14,9 @@
       {% endfor %}
     </ul>
   </section>
-  {% if categories %}
+  {% if False and categories %}
   <section>
-      
+
     <h1>Categories</h1>
     <ul id="recent_posts">
       {% for category, articles in categories %}
@@ -24,7 +24,7 @@
       {% endfor %}
     </ul>
   </section>
-  {% endif %} 
+  {% endif %}
 
   <section>
   <h1>Tags</h1>

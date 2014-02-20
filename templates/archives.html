@@ -20,10 +20,12 @@
                             <span class="year">{{ article.date.strftime('%Y') }}</span>
                         </time>
                         <footer>
+                          {% if article.category != 'posts' %}
                             <span class="categories">posted in
                                 <a class='category' href='{{ SITEROOT }}/{{ article.category.url }}'>{{ article.category }}</a>
                                 {{ tag }}
                             </span>
+                          {% endif %}
                         </footer>
                     </article>
                 {% endfor %}

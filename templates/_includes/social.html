@@ -4,10 +4,10 @@
         <h1>Social</h1>
         <ul>
         {% if FEED_RSS %}
-            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate">RSS</a></li>
+            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate">rss</a></li>
         {% endif %}
         {% if FEED_ATOM %}
-            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate">Atom</a></li>
+            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" type="application/atom+xml" rel="alternate">atom</a></li>
         {% endif %}
         {% for name, link in SOCIAL %}
             <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
